@@ -1,0 +1,1429 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <title>Archives: 2024 | 欣のblog</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="shortcut icon" href="/">
+  <link rel="alternate" href="/atom.xml" title="欣のblog" type="application/atom+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="欣のblog">
+<meta property="og:url" content="https://1578536879.github.io/archives/2024/page/2/index.html">
+<meta property="og:site_name" content="欣のblog">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+    
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata|Titillium+Web" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+  <link href='//cdn.bootcss.com/node-waves/0.7.5/waves.min.css' rel='stylesheet'>
+  
+<link rel="stylesheet" href="/style.css">
+
+  <script>
+    function setLoadingBarProgress(num) {
+      document.getElementById('loading-bar').style.width=num+"%";
+    }
+  </script>
+<meta name="generator" content="Hexo 7.1.1"></head>
+
+<body>
+  <div id="loading-bar-wrapper">
+  <div id="loading-bar"></div>
+</div>
+
+
+  <script>setLoadingBarProgress(20)</script> 
+  <header class="l_header">
+	<div class='wrapper'>
+		<div class="nav-main container container--flex">
+			<a class="logo flat-box" href='/' >
+				欣のblog
+			</a>
+			<div class='menu'>
+				<ul class='h-list'>
+					
+						<li>
+							<a class='flat-box nav-home' href='/'>
+								Home
+							</a>
+						</li>
+					
+						<li>
+							<a class='flat-box nav-archives' href='/archives'>
+								Archives
+							</a>
+						</li>
+					
+						<li>
+							<a class='flat-box nav-gallery' target="_blank" rel="noopener" href='https://photos.google.com/album/AF1QipNoqKYgspQo5O1YhlFXGCQ7p575KBH3Yxf8WHL4?hl=zh-CN'>
+								Gallery
+							</a>
+						</li>
+					
+						<li>
+							<a class='flat-box nav-about' href='/about'>
+								About
+							</a>
+						</li>
+					
+				</ul>
+				<div class='underline'></div>
+			</div>
+			
+				<div class="m_search">
+					<form name="searchform" class="form u-search-form">
+						<input type="text" class="input u-search-input" placeholder="Search" />
+						<span class="icon icon-search"></span>
+					</form>
+				</div>
+			
+			<ul class='switcher h-list'>
+				
+					<li class='s-search'><a href='javascript:void(0)'><span class="icon icon-search flat-box"></span></a></li>
+				
+				<li class='s-menu'><a href='javascript:void(0)'><span class="icon icon-menu flat-box"></span></a></li>
+			</ul>
+		</div>
+		
+		<div class='nav-sub container container--flex'>
+			<a class="logo" class="flat-box" href='javascript:void(0)'>
+				Word of Forks
+			</a>
+
+			<ul class='switcher h-list'>
+				<li class='s-comment'><a href='javascript:void(0)'><span class="icon icon-chat_bubble_outline flat-box"></span></a></li>
+				<li class='s-top'><a href='javascript:void(0)'><span class="icon icon-arrow_upward flat-box"></span></a></li>
+				<li class='s-toc'><a href='javascript:void(0)'><span class="icon icon-format_list_numbered flat-box"></span></a></li>
+			</ul>
+		</div>
+	</div>
+</header>
+<aside class="menu-phone">
+	<nav>
+		
+			<a href="/" class="nav-home nav">
+				Home
+			</a>
+		
+			<a href="/archives" class="nav-archives nav">
+				Archives
+			</a>
+		
+			<a target="_blank" rel="noopener" href="https://photos.google.com/album/AF1QipNoqKYgspQo5O1YhlFXGCQ7p575KBH3Yxf8WHL4?hl=zh-CN" class="nav-gallery nav">
+				Gallery
+			</a>
+		
+			<a href="/about" class="nav-about nav">
+				About
+			</a>
+		
+	</nav>
+</aside>
+
+    <script>setLoadingBarProgress(40);</script>
+  <div class="l_body">
+    <div class='container clearfix'>
+      <div class='l_main'>
+        
+	
+  <script>
+    window.subData= { title:'Year : 2024'}
+  </script>
+
+<section class="post-list">
+	
+    <div class='post-wrapper'>
+      <article class="post reveal">
+  <section class="meta">
+    
+    <h2 class="title">
+      <a href="/2024/02/06/%E3%80%90%E6%89%8B%E5%86%99%E3%80%91call%E3%80%81apply%E3%80%81bind/">
+        【手写】call、apply、bind
+      </a>
+    </h2>
+    
+    <time>
+      Feb 6, 2024
+    </time>
+		
+    
+    <div class='cats'>
+        <a href="/categories/js/">js</a>
+    </div>
+
+  </section>
+  <section class="article typo">
+	  <h2 id="call"><a href="#call" class="headerlink" title="call"></a><em>call</em></h2><p>call 可以改变调用函数时的 this 指向，当调用但什么都不传入时，默认是 window 对象</p>
+<h3 id="内部流程"><a href="#内部流程" class="headerlink" title="内部流程"></a>内部流程</h3><p><a target="_blank" rel="noopener" href="https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-function.prototype.call">es 文档</a>上编写的流程如下:</p>
+<ul>
+<li><p>让一个函数 func 指向 this</p>
+</li>
+<li><p>如果这个函数 func 不能被调用，那么抛出 TypeError</p>
+</li>
+<li><p>准备尾调用 PrepareForTailCall</p>
+</li>
+<li><p>返回执行结果</p>
+</li>
+</ul>
+<p>思路</p>
+<ul>
+<li><p>判断需要改变的 context 是否为空，如果为空，那么就默认指为 window。保留这个新的 context，作为后面函数调用时需要的 this 指向</p>
+</li>
+<li><p>将当前的 this 指向赋值给上一步保留的 context，作为 context 的一个属性</p>
+</li>
+<li><p>调用第一步保留的 context 的第二步赋值的属性函数，将所需要的参数传递给上一步新赋值的属性</p>
+</li>
+</ul>
+<h3 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h3><ul>
+<li>call</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">call_handle_writing</span>(<span class="params">fn</span>) &#123;</span><br><span class="line">  <span class="comment">// ctx指向obj，因为fn为非空</span></span><br><span class="line">  <span class="keyword">const</span> ctx = fn || <span class="variable language_">window</span>;</span><br><span class="line">  <span class="comment">//   ctx.cb指向的是fn1</span></span><br><span class="line">  ctx.<span class="property">cb</span> = <span class="variable language_">this</span>;</span><br><span class="line">  <span class="comment">//   获取参数</span></span><br><span class="line">  <span class="keyword">const</span> args = [...<span class="variable language_">arguments</span>].<span class="title function_">slice</span>(<span class="number">1</span>);</span><br><span class="line">  <span class="comment">//   调用fn1函数，但是由于是ctx调用的，那么fn1被调用的时候的this指向是ctx</span></span><br><span class="line">  <span class="keyword">const</span> res = ctx.<span class="title function_">cb</span>(...args);</span><br><span class="line">  <span class="keyword">return</span> res;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="title class_">Function</span>.<span class="property"><span class="keyword">prototype</span></span>.<span class="property">call_handle_writing</span> = call_handle_writing;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>使用</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">fn1</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="variable language_">this</span>.<span class="property">a</span> = <span class="number">1</span>;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;out&quot;</span>, <span class="variable language_">this</span>, <span class="variable language_">arguments</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">let</span> obj = &#123;</span><br><span class="line">  <span class="attr">a</span>: <span class="number">100</span>,</span><br><span class="line">&#125;;</span><br><span class="line">fn1.<span class="title function_">call_handle_writing</span>(obj, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>);</span><br></pre></td></tr></table></figure>
+
+<h2 id="apply"><a href="#apply" class="headerlink" title="apply"></a>apply</h2><h3 id="实现流程"><a href="#实现流程" class="headerlink" title="实现流程"></a>实现流程</h3><blockquote>
+<ol>
+<li>Let func be the this value.</li>
+<li>If IsCallable(func) is false, throw a TypeError exception.</li>
+<li>If argArray is either undefined or null, then<blockquote>
+<p>a. Perform PrepareForTailCall().<br /><br>b. Return ? <font color=red>Call(func, thisArg).</font></p>
+</blockquote>
+</li>
+<li>Let argList be ? CreateListFromArrayLike(argArray).</li>
+<li>Perform PrepareForTailCall().</li>
+<li>Return ? Call(func, thisArg, argList).</li>
+</ol>
+</blockquote>
+<p>其实就是接受一个数组作为参数，实际最后的调用时，调用的也是 call 方法</p>
+<p>apply 调用 call 的时候，会用到扩展运算符，将参数放到 call 的参数中，因此这在一定程度上，导致了 apply 的性能会稍低于 call</p>
+<h3 id="具体实现"><a href="#具体实现" class="headerlink" title="具体实现"></a>具体实现</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">apply_handle_writing</span>(<span class="params">fn, params</span>) &#123;</span><br><span class="line">  <span class="keyword">if</span> (<span class="title class_">Array</span>.<span class="title function_">isArray</span>(params)) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="variable language_">this</span>.<span class="title function_">call_handle_writing</span>(fn, ...params);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> <span class="variable language_">this</span>.<span class="title function_">call_handle_writing</span>(fn);</span><br><span class="line">&#125;</span><br><span class="line"><span class="title class_">Function</span>.<span class="property"><span class="keyword">prototype</span></span>.<span class="property">apply_handle_writing</span> = apply_handle_writing;</span><br></pre></td></tr></table></figure>
+
+<h2 id="bind"><a href="#bind" class="headerlink" title="bind"></a>bind</h2><h3 id="内部流程-1"><a href="#内部流程-1" class="headerlink" title="内部流程"></a>内部流程</h3><blockquote>
+<ol>
+<li>Let Target be the this value.</li>
+<li>If IsCallable(Target) is false, throw a TypeError exception.</li>
+<li>Let F be ? BoundFunctionCreate(Target, thisArg, args).</li>
+<li>Let L be 0.</li>
+<li>Let targetHasLength be ? HasOwnProperty(Target, “length”).</li>
+<li>If targetHasLength is true, then<blockquote>
+<p>a. Let targetLen be ? Get(Target, “length”).<br/><br>b. If targetLen is a Number, then<br/></p>
+<blockquote>
+<p>i. If targetLen is +∞𝔽, set L to +∞.<br/></p>
+<blockquote>
+<p>ii. Else if targetLen is -∞𝔽, set L to 0.<br/><br>iii. Else,</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</li>
+<li>Let targetLenAsInt be ! ToIntegerOrInfinity(targetLen).</li>
+<li>Assert: targetLenAsInt is finite.</li>
+<li>Let argCount be the number of elements in args.</li>
+<li>Set L to max(targetLenAsInt - argCount, 0).</li>
+<li>Perform SetFunctionLength(F, L).</li>
+<li>Let targetName be ? Get(Target, “name”).</li>
+<li>If targetName is not a String, set targetName to the empty String.</li>
+<li>Perform SetFunctionName(F, targetName, “bound”).</li>
+<li>Return F.</li>
+</ol>
+</blockquote>
+<p>考虑场景：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">A</span>(<span class="params"></span>) &#123;&#125;</span><br><span class="line">A.<span class="property"><span class="keyword">prototype</span></span>.<span class="property">say</span> = <span class="keyword">function</span> (<span class="params"></span>) &#123;&#125;;</span><br><span class="line"><span class="keyword">function</span> <span class="title function_">B</span>(<span class="params"></span>) &#123;&#125;</span><br><span class="line"><span class="keyword">const</span> C = A.<span class="title function_">bind</span>(B);</span><br><span class="line"><span class="keyword">const</span> c = <span class="keyword">new</span> <span class="title function_">C</span>();</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>调用 bind 后，使用<code>new</code>去创建一个实例，那么在<code>new</code>的时候不应该改变<code>this</code>指向</p>
+<p>在返回的函数中，用<code>instanceof</code>判断是否是通过<code>new</code>方法进行调用的</p>
+</li>
+<li><p>调用 bind 后，在 c 上面可以调用 A 上 <code>prototype</code> 的方法</p>
+<p>采用继承的方式，在返回的函数上，继承 A</p>
+</li>
+</ul>
+<h3 id="具体实现-1"><a href="#具体实现-1" class="headerlink" title="具体实现"></a>具体实现</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">bind_handle_writing</span>(<span class="params">fn</span>) &#123;</span><br><span class="line">  <span class="keyword">const</span> that = <span class="variable language_">this</span>;</span><br><span class="line">  <span class="keyword">const</span> args = [...<span class="variable language_">arguments</span>].<span class="title function_">slice</span>(<span class="number">1</span>);</span><br><span class="line">  <span class="keyword">function</span> <span class="title function_">cb</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="keyword">const</span> params = [...<span class="variable language_">arguments</span>, ...args];</span><br><span class="line">    fn = <span class="variable language_">this</span> <span class="keyword">instanceof</span> cb ? <span class="variable language_">this</span> : fn;</span><br><span class="line">    <span class="keyword">return</span> that.<span class="title function_">call</span>(fn, ...params);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">// 用一个中间函数，在原型链上加一层，防止属性覆盖</span></span><br><span class="line">  <span class="keyword">const</span> buf = <span class="keyword">function</span> (<span class="params"></span>) &#123;&#125;;</span><br><span class="line">  buf.<span class="property"><span class="keyword">prototype</span></span> = <span class="variable language_">this</span>.<span class="property"><span class="keyword">prototype</span></span>;</span><br><span class="line">  cb.<span class="property"><span class="keyword">prototype</span></span> = <span class="title class_">Object</span>.<span class="title function_">create</span>(<span class="variable language_">this</span>.<span class="property"><span class="keyword">prototype</span></span>);</span><br><span class="line">  <span class="keyword">return</span> cb;</span><br><span class="line">&#125;</span><br><span class="line"><span class="title class_">Function</span>.<span class="property"><span class="keyword">prototype</span></span>.<span class="property">bind_handle_writing</span> = bind_handle_writing;</span><br></pre></td></tr></table></figure>
+
+<h3 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h3><p><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/b540e1e17f54">如何手写一个 bind 方法</a></p>
+
+
+    
+    
+    
+  </section>
+</article>
+    </div>
+  
+    <div class='post-wrapper'>
+      <article class="post reveal">
+  <section class="meta">
+    
+    <h2 class="title">
+      <a href="/2024/02/06/%E3%80%90%E5%89%8D%E7%AB%AF%E7%BC%93%E5%AD%98%E3%80%91%E9%9A%8F%E6%9C%BA%E6%95%B0%E4%BD%8D%E7%BD%AE%E5%8C%BA%E5%88%AB/">
+        【前端缓存】随机数位置区别
+      </a>
+    </h2>
+    
+    <time>
+      Feb 6, 2024
+    </time>
+		
+    
+    <div class='cats'>
+        <a href="/categories/%E6%B5%8F%E8%A7%88%E5%99%A8/">浏览器</a>
+    </div>
+
+  </section>
+  <section class="article typo">
+	  <h2 id="文件随机数存放位置区别"><a href="#文件随机数存放位置区别" class="headerlink" title="文件随机数存放位置区别"></a>文件随机数存放位置区别</h2><h3 id="文件url-随机数"><a href="#文件url-随机数" class="headerlink" title="文件url+?+随机数"></a>文件url+?+随机数</h3><ul>
+<li><p><code>https://xxx?v=1.x.x</code></p>
+<p>一般用于版本号对应的文件</p>
+</li>
+<li><p><code>https://xxx?c=s45sdf</code></p>
+<p>一般用于文件内容生成的hash值</p>
+</li>
+</ul>
+<h3 id="文件名-hash值"><a href="#文件名-hash值" class="headerlink" title="文件名+hash值"></a>文件名+hash值</h3><p><code>https://xxxs45sdf</code></p>
+<p>hash值一般由文件内容生成</p>
+<h2 id="区别"><a href="#区别" class="headerlink" title="区别"></a>区别</h2><p>以上两种存放位置都可以使浏览器获取最新的文件，而不是走缓存拿文件</p>
+<p>当前主流的一般是用文件名+hash值的形式。原因如下</p>
+<blockquote>
+<p>一般发版时，是有html文件和js、css文件的。<br />浏览器首先去请求html文件，html嵌入了js、css等其他文件。<br />那么在请求html和js、css等文件的这个时间差内，如果采用第一种方式(文件url+?+随机数)，就容易出现问题</p>
+</blockquote>
+<ul>
+<li><p>如果先发html文件，再发js、css等文件</p>
+<ul>
+<li><p>客户请求时，浏览器不会走缓存，会去取最新的文件。</p>
+</li>
+<li><p>但是可能这个时候取的js、css文件还是老的文件。那么就导致客户端下次再去请求时，走的其实是缓存。</p>
+</li>
+</ul>
+</li>
+<li><p>先发js、css等文件，再发html文件</p>
+<ul>
+<li><p>对于有缓存的用户不会造成影响。</p>
+</li>
+<li><p>但是对于无缓存的用户，拿取数据时，会拿取到最新的js、css等文件，那么最直观的影响可能是页面样式问题。但当html发布成功后，页面会恢复正常</p>
+</li>
+</ul>
+</li>
+<li><p>对于异步加载的情况</p>
+<ul>
+<li><p>代码发布后，用户在使用过程中，进入了一个新路由</p>
+</li>
+<li><p>在新路由页面，获取的是最新的代码文件，但是在进入之前，获取的是老代码文件，那么这里就会导致新老代码文件交替，容易出现问题</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>因此，采用文件名+hash的方式，无论是先发html还是js、css文件，由于是直接通过文件名去获取的，那么就不会产生上述问题。</p>
+<ul>
+<li><p>先发js、css等文件</p>
+<ul>
+<li>由于文件名不同，由于文件名已经不一样了，所以不会覆盖掉之前存在的资源文件，客户端依旧可以安全的访问。</li>
+</ul>
+</li>
+<li><p>再发html文件</p>
+<ul>
+<li>因为js、css等文件已经发布完毕了，那么当html更新了之后，再获取的js、css等文件就已经是最新的了</li>
+</ul>
+</li>
+</ul>
+<h2 id="参链"><a href="#参链" class="headerlink" title="参链"></a>参链</h2><p><a target="_blank" rel="noopener" href="https://github.com/fouber/blog/issues/6">大公司里怎样开发和部署前端代码</a></p>
+
+
+    
+    
+    
+  </section>
+</article>
+    </div>
+  
+    <div class='post-wrapper'>
+      <article class="post reveal">
+  <section class="meta">
+    
+    <h2 class="title">
+      <a href="/2024/02/06/%E3%80%90wasb%E3%80%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">
+        【wasb】环境搭建
+      </a>
+    </h2>
+    
+    <time>
+      Feb 6, 2024
+    </time>
+		
+    
+    <div class='cats'>
+        <a href="/categories/webAssembly/">webAssembly</a>
+    </div>
+
+  </section>
+  <section class="article typo">
+	  <h1 id="【webAsb】-Emscripten环境搭建"><a href="#【webAsb】-Emscripten环境搭建" class="headerlink" title="【webAsb】- Emscripten环境搭建"></a>【webAsb】- Emscripten环境搭建</h1><h2 id="依赖环境"><a href="#依赖环境" class="headerlink" title="依赖环境"></a>依赖环境</h2><ul>
+<li><p>python</p>
+</li>
+<li><p>git</p>
+</li>
+</ul>
+<p>这两项环境是必要的，否则无法进行安装</p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><h3 id="下载项目"><a href="#下载项目" class="headerlink" title="下载项目"></a>下载项目</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone <span class="attr">https</span>:<span class="comment">//github.com/juj/emsdk.git</span></span><br></pre></td></tr></table></figure>
+<p>下载emscripten项目</p>
+<h3 id="安装依赖包等"><a href="#安装依赖包等" class="headerlink" title="安装依赖包等"></a>安装依赖包等</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">cd emsdk <span class="comment">// 进入项目目录中</span></span><br><span class="line">emsdk update <span class="comment">// 安装各种工具</span></span><br><span class="line">emsdk install latest <span class="comment">//下载各种包，时间比较长</span></span><br><span class="line">emsdk activate latest <span class="comment">//生成 ~/.emscripten 文件，激活配置</span></span><br></pre></td></tr></table></figure>
+
+<p><a target="_blank" rel="noopener" href="https://imgse.com/i/pP6oCWT"><img src="https://s1.ax1x.com/2023/09/09/pP6oCWT.png" alt="pP6oCWT.png"></a></p>
+<h3 id="配置环境变量"><a href="#配置环境变量" class="headerlink" title="配置环境变量"></a>配置环境变量</h3><p>可以先执行<code>emsdk_env</code>脚本，这个脚本默认会写入环境变量，但是也会有不成功的情况。</p>
+<p>在非emsdk目录下执行<code>emcc --version</code>，判断是否报错，如果报错，就证明环境并未配置成功；如果未报错，那么环境已经配置完成啦</p>
+<h4 id="环境未配置成功"><a href="#环境未配置成功" class="headerlink" title="环境未配置成功"></a>环境未配置成功</h4><ul>
+<li><p>执行 <code>emcmdprompt.bat</code>命令</p>
+<p><a target="_blank" rel="noopener" href="https://imgse.com/i/pP6xUSA"><img src="https://s1.ax1x.com/2023/09/09/pP6xUSA.png" alt="pP6xUSA.png"></a></p>
+</li>
+<li><p>将带有<code>PATH +=</code>的路径写入环境变量的Path中</p>
+<p><a target="_blank" rel="noopener" href="https://imgse.com/i/pP6zKhQ"><img src="https://s1.ax1x.com/2023/09/09/pP6zKhQ.png" alt="pP6zKhQ.png"></a></p>
+</li>
+<li><p>将下面带有键值对的写入系统变量中</p>
+<p>记住不能有空格，否则会执行不成功</p>
+<p><a target="_blank" rel="noopener" href="https://imgse.com/i/pP6z1cn"><img src="https://s1.ax1x.com/2023/09/09/pP6z1cn.png" alt="pP6z1cn.png"></a></p>
+</li>
+<li><p>在非<code>emsdk</code>目录下执行<code>emcc --version</code></p>
+<p><a target="_blank" rel="noopener" href="https://imgse.com/i/pP6zJBV"><img src="https://s1.ax1x.com/2023/09/09/pP6zJBV.png" alt="pP6zJBV.png"></a></p>
+<p>环境配置成功</p>
+</li>
+</ul>
+<h2 id="配置c-环境"><a href="#配置c-环境" class="headerlink" title="配置c++环境"></a>配置c++环境</h2><h3 id="安装配置c-c"><a href="#安装配置c-c" class="headerlink" title="安装配置c&#x2F;c++"></a>安装配置c&#x2F;c++</h3><ul>
+<li><p>安装</p>
+<p>安装c&#x2F;c++编译器：<a target="_blank" rel="noopener" href="https://sourceforge.net/projects/mingw-w64/">https://sourceforge.net/projects/mingw-w64/</a></p>
+</li>
+<li><p>配置</p>
+<p>在环境变量的Path中，把解压的mingw的bin目录加入进去</p>
+</li>
+</ul>
+<h3 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h3><p>在cmd输入<code>gcc -v</code>，没有报错即可</p>
+<p><a target="_blank" rel="noopener" href="https://imgse.com/i/pPIgD91"><img src="https://z1.ax1x.com/2023/09/21/pPIgD91.png" alt="pPIgD91.png"></a></p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_43180456/article/details/126374156">参链</a></p>
+<h2 id="测试-1"><a href="#测试-1" class="headerlink" title="测试"></a>测试</h2><h3 id="编写测试程序"><a href="#编写测试程序" class="headerlink" title="编写测试程序"></a>编写测试程序</h3><p>建立一个cpp文件，写入c的代码</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;Hello, world!&quot;</span> &lt;&lt; endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="生成js代码"><a href="#生成js代码" class="headerlink" title="生成js代码"></a>生成js代码</h3><blockquote>
+<p><code>emcc test.cpp -o test.html</code></p>
+</blockquote>
+<p>会生成<code>html</code>，<code>js</code>和<code>wasm</code>文件，html默认引入js文件，js的作用是引入wasm文件</p>
+<ul>
+<li><p><code>-s</code> 表明编译到 Wasm，否则编译到 Asm.js（Wasm 的前身）， 最初 emscripten 是用于编译到 Asm.js 的。</p>
+</li>
+<li><p><code>SIDE_MODULE</code> 表明编译为副模块。有副模块就有主模块，简单理解副模块会去除 C 标准库函数，因为副模块会在运行时被链接到一个主模块，而主模块有C标准库函数。SIDE_MODULE的值可选 1 或者 2，前者会自动导出代码里所有的函数，而后者需要手动声明。</p>
+</li>
+<li><p><code>-o</code> xxxx 导出选项，导出的文件可选 .html、.js、.wasm，区别在于前面两者会帮你把胶水代码写好 ，而 .wasm 则需要在 JS 自己编写胶水代码了，但是前面两者代码冗余，比如编译为 JS 文件时，JS 文件会包含两千多行代码，不过这是学习 Wasm 的现成实例。</p>
+</li>
+</ul>
+<h3 id="搭建本地服务器"><a href="#搭建本地服务器" class="headerlink" title="搭建本地服务器"></a>搭建本地服务器</h3><p>在代码路径中，搭建本地服务。在浏览器访问本地的文件会报错</p>
+<ul>
+<li><p><code>pnpm init</code></p>
+<p>创建package.json文件</p>
+</li>
+<li><p><code>pnpm i http-server</code></p>
+<p>安装<code>http-server</code></p>
+</li>
+<li><p><code>http-server -o</code></p>
+<p>起本地服务，在浏览器打开html文件</p>
+</li>
+</ul>
+<h3 id="验收"><a href="#验收" class="headerlink" title="验收"></a>验收</h3><p>用<code>http-server</code>起了本地服务后，在浏览器访问对应的域名加上生成的html文件，正常运行项目</p>
+<p><a target="_blank" rel="noopener" href="https://imgse.com/i/pPIfE5Q"><img src="https://z1.ax1x.com/2023/09/21/pPIfE5Q.png" alt="pPIfE5Q.png"></a></p>
+<h2 id="参链"><a href="#参链" class="headerlink" title="参链"></a>参链</h2><p><a target="_blank" rel="noopener" href="http://www.taodudu.cc/news/show-5750307.html?action=onClick">Emscripten编译器安装教程，亲测成功编译出第一个WebAssembly</a></p>
+
+
+    
+    
+    
+  </section>
+</article>
+    </div>
+  
+    <div class='post-wrapper'>
+      <article class="post reveal">
+  <section class="meta">
+    
+    <h2 class="title">
+      <a href="/2024/02/06/%E3%80%90pwa%E3%80%91mainifest/">
+        【pwa】mainifest
+      </a>
+    </h2>
+    
+    <time>
+      Feb 6, 2024
+    </time>
+		
+    
+    <div class='cats'>
+        <a href="/categories/PWA/">PWA</a>
+    </div>
+
+  </section>
+  <section class="article typo">
+	  <h1 id="mainifest-json"><a href="#mainifest-json" class="headerlink" title="mainifest.json"></a>mainifest.json</h1><h2 id="用途"><a href="#用途" class="headerlink" title="用途"></a>用途</h2><p>通过 manifest.json 可以实现自定义启动画面、打开 url、设置界面颜色、设置桌面图标等</p>
+<h2 id="常用字段"><a href="#常用字段" class="headerlink" title="常用字段"></a>常用字段</h2><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;short_name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;pwa1&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;pwa-测试用例1&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;icons&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">    <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;src&quot;</span><span class="punctuation">:</span> <span class="string">&quot;qr-code-fill-144.png&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;sizes&quot;</span><span class="punctuation">:</span> <span class="string">&quot;144x144&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;type&quot;</span><span class="punctuation">:</span> <span class="string">&quot;image/png&quot;</span></span><br><span class="line">    <span class="punctuation">&#125;</span></span><br><span class="line">  <span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;start_url&quot;</span><span class="punctuation">:</span> <span class="string">&quot;/test1&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;display&quot;</span><span class="punctuation">:</span> <span class="string">&quot;standalone&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;theme_color&quot;</span><span class="punctuation">:</span> <span class="string">&quot;blue&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;background_color&quot;</span><span class="punctuation">:</span> <span class="string">&quot;black&quot;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>name: string</code></li>
+</ul>
+<p>描述应用的名称，会显示在桌面图标的标题位置和启动画面中</p>
+<ul>
+<li><p><code>short_name: string</code></p>
+<p>描述应用的短名称。当应用名字过长，在桌面图标无法全部显示时，会显示 shortname</p>
+</li>
+<li><p><code>scope：string</code></p>
+<p>设置 manifest 对于网站的作用范围。</p>
+</li>
+<li><p><code>start_url: string</code></p>
+<p>描述用户从设备主屏幕点击图标进入时的第一个地址，start_url 必须在 scope 的作用范围内</p>
+<ul>
+<li><p>如果为空，则以 manifest.json 作为 url</p>
+</li>
+<li><p>如果 url 打开失败，则和正常显示的网页打开错误的样式一样</p>
+</li>
+<li><p>如果设置的 url 和当前的项目不在一个域下，无法正常显示</p>
+</li>
+<li><p>如果 starturl 为相对地址，那么根路径基于 manifest 的路径</p>
+</li>
+<li><p>如果 starturl 为绝对路径，那么根路径为将</p>
+</li>
+</ul>
+</li>
+<li><p><code>icon：TIcon</code></p>
+<p>设置 webapp 图标集合。</p>
+<figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">type</span> <span class="title class_">TIcon</span> = &#123;</span><br><span class="line">  <span class="attr">src</span>: <span class="built_in">string</span>; <span class="comment">//图标地址</span></span><br><span class="line">  <span class="attr">type</span>: <span class="built_in">string</span>; <span class="comment">//图标mime类型，只能为image/png</span></span><br><span class="line">  <span class="attr">sizes</span>: <span class="built_in">string</span>; <span class="comment">//图标大小，用来表示width x height，单位为px，如果图标要适配多个尺寸，则多个尺寸用空格隔开。与真实图片大小要一致</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>适配规则：</p>
+<ul>
+<li><p>将 webapp 添加到桌面时，浏览器会适配最合适尺寸的图标。浏览器会首先去找与显示密度想匹配且尺寸调整为 48dp 屏幕密度的图标。例如在 2 倍像素的设备上使用 96px，3 倍像素的设备上使用 144px 的</p>
+</li>
+<li><p>如果没有找到合适的图标，那么会查找与设备特性匹配度最高的图标</p>
+</li>
+<li><p>如果图标路径错误，那么将显示浏览器的默认图标</p>
+</li>
+</ul>
+</li>
+<li><p><code>background_color: string</code></p>
+<p>启动画面的背景颜色。rgbs、hsl、hsla 等写法浏览器不支持。未设置时，默认白色</p>
+</li>
+<li><p><code>theme_color: string</code></p>
+<p>显示 web app 的主题色，显示在 banner 位置</p>
+</li>
+<li><p><code>display: &#39;fullscreen&#39;|&#39;standalone&#39;|&#39;minimal-ui&#39;|&#39;browser&#39;</code></p>
+<p>webapp 被启动时显示的类型</p>
+</li>
+<li><p><code>orientation</code>: <code>&#39;landscape-primary&#39;|&#39;landscape-secondary&#39;|&#39;landscape&#39;|&#39;portrait-primary&#39;|&#39;portrait-secondary&#39;|&#39;portrait&#39;|&#39;natural&#39;|&#39;any&#39;</code></p>
+<p>webapp 在屏幕上的显示方向</p>
+</li>
+<li><p><code>dir: &#39;ltr&#39;|&#39;rtl&#39;|&#39;auto&#39;</code></p>
+<p>文字的显示方向</p>
+</li>
+<li><p><code>related_applications: &#39;platform&#39;|&#39;id&#39;</code></p>
+<p>用于定义对应的原生应用，类似应用安装横幅提示的形式去推广、引流原生应用</p>
+</li>
+<li><p><code>prefer_related_applications: Boolean</code></p>
+<p>设置是否只允许用户安装原生应用</p>
+</li>
+</ul>
+<h2 id="生效条件"><a href="#生效条件" class="headerlink" title="生效条件"></a>生效条件</h2><ul>
+<li><p>必须是 https 或者 localhost</p>
+</li>
+<li><p>必须注册运行 service worker，且有 fetch 事件监听</p>
+</li>
+<li><p>manifest 必须要有 icons,且必须要至少有尺寸为144x144的</p>
+</li>
+<li><p>diaplay 设置为 standalone 或者 fullscreen</p>
+</li>
+<li><p>必须有 name 或者 short_name，start_url</p>
+</li>
+<li><p>prefer_related_applications 未设置或者为 false</p>
+</li>
+</ul>
+<h2 id="引导安装"><a href="#引导安装" class="headerlink" title="引导安装"></a>引导安装</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">window</span>.<span class="title function_">addEventListener</span>(<span class="string">&quot;beforeinstallprompt&quot;</span>, <span class="function">(<span class="params">e</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;beforeinstallprompt&quot;</span>);</span><br><span class="line">  e.<span class="title function_">preventDefault</span>();</span><br><span class="line">  e.<span class="title function_">prompt</span>();<span class="comment">//显示安装弹窗</span></span><br><span class="line">&#125;);</span><br><span class="line">navigator.<span class="property">serviceWorker</span></span><br><span class="line">  .<span class="title function_">register</span>(<span class="string">&quot;pwa1.js&quot;</span>)</span><br><span class="line">  .<span class="title function_">then</span>(<span class="function">(<span class="params">res</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;service-pwa1注册成功&quot;</span>, res);</span><br><span class="line">  &#125;)</span><br><span class="line">  .<span class="title function_">catch</span>(<span class="function">(<span class="params">err</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;service-pwa1注册失败&quot;</span>, err);</span><br><span class="line">  &#125;);</span><br></pre></td></tr></table></figure>
+
+
+    
+    
+    
+  </section>
+</article>
+    </div>
+  
+    <div class='post-wrapper'>
+      <article class="post reveal">
+  <section class="meta">
+    
+    <h2 class="title">
+      <a href="/2024/02/06/%E3%80%90HTML%E3%80%91templates%20and%20slots/">
+        【HTML】templates and slots
+      </a>
+    </h2>
+    
+    <time>
+      Feb 6, 2024
+    </time>
+		
+    
+    <div class='cats'>
+        <a href="/categories/HTML/">HTML</a>
+    </div>
+
+  </section>
+  <section class="article typo">
+	  <h1 id="【HTML】templates-and-slots"><a href="#【HTML】templates-and-slots" class="headerlink" title="【HTML】templates and slots"></a>【HTML】templates and slots</h1><h2 id="概况"><a href="#概况" class="headerlink" title="概况"></a><h1>概况</h1></h2><p>可以用来灵活填充 Web 组件的 shadow DOM 的模板。可以复用相同的标记结构。</p>
+<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><ul>
+<li><p>编写一个 template</p>
+<p>直接在页面中编写一个 template 不会直接在页面中显示出来</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">template</span> <span class="attr">id</span>=<span class="string">&quot;test&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="language-css"></span></span><br><span class="line"><span class="language-css">    <span class="selector-tag">p</span> &#123;</span></span><br><span class="line"><span class="language-css">      <span class="attribute">color</span>: white;</span></span><br><span class="line"><span class="language-css">      <span class="attribute">background-color</span>: <span class="number">#666</span>;</span></span><br><span class="line"><span class="language-css">      <span class="attribute">padding</span>: <span class="number">5px</span>;</span></span><br><span class="line"><span class="language-css">    &#125;</span></span><br><span class="line"><span class="language-css">  </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span>测试template<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>注册自定义模板</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">customElements.<span class="title function_">define</span>(</span><br><span class="line">  <span class="string">&quot;test-template&quot;</span>,</span><br><span class="line">  <span class="keyword">class</span> <span class="title class_">extends</span> <span class="title class_">HTMLElement</span> &#123;</span><br><span class="line">    <span class="title function_">constructor</span>(<span class="params"></span>) &#123;</span><br><span class="line">      <span class="variable language_">super</span>();</span><br><span class="line">      <span class="keyword">let</span> template = <span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&quot;test&quot;</span>);</span><br><span class="line">      <span class="keyword">let</span> templateContent = template.<span class="property">content</span>;</span><br><span class="line"></span><br><span class="line">      <span class="keyword">const</span> shadowRoot = <span class="variable language_">this</span>.<span class="title function_">attachShadow</span>(&#123; <span class="attr">mode</span>: <span class="string">&quot;open&quot;</span> &#125;);</span><br><span class="line">      shadowRoot.<span class="title function_">appendChild</span>(templateContent.<span class="title function_">cloneNode</span>(<span class="literal">true</span>));</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>组件显示</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">test-template</span> /&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>页面显示</p>
+<p><a target="_blank" rel="noopener" href="https://imgse.com/i/pC4aUiV"><img src="https://s1.ax1x.com/2023/07/14/pC4aUiV.png" alt="pC4aUiV.png"></a></p>
+<p>template 的元素的样式也是独立的，并不会因为父级定义的同一个样式而影响内部。</p>
+<p>虽然 template 和使用在同一个页面，但是如果直接在 Elements 面板里面修改 template 的内容，<strong>不会</strong>影响到渲染的地方。</p>
+<p><a target="_blank" rel="noopener" href="https://imgse.com/i/pC4aWRO"><img src="https://s1.ax1x.com/2023/07/14/pC4aWRO.png" alt="pC4aWRO.png"></a></p>
+</li>
+<li><p>添加 slot</p>
+<p>添加的slot的样式只收到父级的影响，并不会受到template中定义的样式影响</p>
+<p>如果是template中并没有定义对于的slot，那么传入的slot并不会被渲染</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">template</span> <span class="attr">id</span>=<span class="string">&quot;test&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="language-css"></span></span><br><span class="line"><span class="language-css">    <span class="selector-tag">p</span> &#123;</span></span><br><span class="line"><span class="language-css">      <span class="attribute">color</span>: white;</span></span><br><span class="line"><span class="language-css">      <span class="attribute">background-color</span>: <span class="number">#666</span>;</span></span><br><span class="line"><span class="language-css">      <span class="attribute">padding</span>: <span class="number">5px</span>;</span></span><br><span class="line"><span class="language-css">    &#125;</span></span><br><span class="line"><span class="language-css">  </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">slot</span>&gt;</span><span class="tag">&lt;/<span class="name">slot</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">slot</span> <span class="attr">name</span>=<span class="string">&quot;text1&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">slot</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span>测试template<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">test-template</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>默认slot的内容<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span> <span class="attr">slot</span>=<span class="string">&quot;text1&quot;</span>&gt;</span>具名插槽的内容<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">test-template</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><a target="_blank" rel="noopener" href="https://imgse.com/i/pC4azLj"><img src="https://s1.ax1x.com/2023/07/14/pC4azLj.png" alt="pC4azLj.png"></a></p>
+<ul>
+<li>获取slot名</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> el = <span class="variable language_">document</span>.<span class="title function_">querySelectorAll</span>(<span class="string">&#x27;test-template p&#x27;</span>)</span><br><span class="line">  el.<span class="title function_">forEach</span>(<span class="function"><span class="params">ele</span>=&gt;</span>&#123;</span><br><span class="line">      <span class="variable language_">console</span>.<span class="title function_">log</span>(ele.<span class="property">slot</span>)</span><br><span class="line">  &#125;)</span><br><span class="line"><span class="comment">//  输出：&quot;&quot;, &quot;text1&quot;, &quot;text2&quot;</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="参链"><a href="#参链" class="headerlink" title="参链"></a>参链</h2><p><a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/API/Web_components/Using_templates_and_slots#%E4%BD%BF%E7%94%A8%E6%A7%BD_slots_%E6%B7%BB%E5%8A%A0%E7%81%B5%E6%B4%BB%E5%BA%A6">使用 templates and slots</a></p>
+<p><a target="_blank" rel="noopener" href="https://cloud.tencent.com/developer/article/1009633?areaSource=106001.5">shadow dom解析</a></p>
+
+
+    
+    
+    
+  </section>
+</article>
+    </div>
+  
+    <div class='post-wrapper'>
+      <article class="post reveal">
+  <section class="meta">
+    
+    <h2 class="title">
+      <a href="/2024/02/06/%E3%80%90HTML%E3%80%91Shadow%20DOM/">
+        【HTML】Shadow DOM
+      </a>
+    </h2>
+    
+    <time>
+      Feb 6, 2024
+    </time>
+		
+    
+    <div class='cats'>
+        <a href="/categories/HTML/">HTML</a>
+    </div>
+
+  </section>
+  <section class="article typo">
+	  <h1 id="【HTML】Shadow-DOM"><a href="#【HTML】Shadow-DOM" class="headerlink" title="【HTML】Shadow DOM"></a>【HTML】Shadow DOM</h1><h2 id="概况"><a href="#概况" class="headerlink" title="概况"></a><h1>概况</h1></h2><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><p>能够为 Web 组件中的 DOM 和 CSS 提供了封装，实际上是在浏览器渲染文档的时候会给指定的 DOM 结构插入编写好的 DOM 元素，但是插入的 Shadow DOM 会与主文档的 DOM 保持<strong>分离</strong>，也就是说 Shadow DOM<strong>不存在</strong>于主 DOM 树上。shadow root 节点为起始根节点，在这个根节点的下方，可以是任意元素，和普通的 DOM 元素一样。</p>
+<p>并且 Shadow DOM 封装出来的 DOM 元素是<strong>独立</strong>的，外部的配置不会影响到内部，内部的配置也不会影响外部。</p>
+<p><a target="_blank" rel="noopener" href="https://imgse.com/i/pCfsSyD"><img src="https://s1.ax1x.com/2023/07/12/pCfsSyD.png" alt="pCfsSyD.png"></a></p>
+<h3 id="查看"><a href="#查看" class="headerlink" title="查看"></a>查看</h3><p>控制台-》设置按钮-》Preference -》 Elements -》点击 show user anent shadow dom 的 checkbox</p>
+<p><a target="_blank" rel="noopener" href="https://imgse.com/i/pCfrOF1"><img src="https://s1.ax1x.com/2023/07/12/pCfrOF1.png" alt="pCfrOF1.png"></a></p>
+<p>打开之后可以看到一些元素的真实布局及内容组成。</p>
+<h3 id="结构"><a href="#结构" class="headerlink" title="结构"></a>结构</h3><p><img src="https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_shadow_DOM/shadowdom.svg" alt="image.png"></p>
+<ul>
+<li><p><code>Shadow host</code>：一个常规 DOM 节点，Shadow DOM 会被附加到这个节点上。</p>
+</li>
+<li><p><code>Shadow tree</code>：Shadow DOM 内部的 DOM 树。</p>
+</li>
+<li><p><code>Shadow boundary</code>：Shadow DOM 结束的地方，也是常规 DOM 开始的地方。</p>
+</li>
+<li><p><code>Shadow root</code>: Shadow tree 的根节点。</p>
+</li>
+</ul>
+<h2 id="custom-element-自定义标签"><a href="#custom-element-自定义标签" class="headerlink" title="custom element(自定义标签)"></a><h1>custom element(自定义标签)</h1></h2><h3 id="概况-1"><a href="#概况-1" class="headerlink" title="概况"></a>概况</h3><p>可以注册一个自定义标签，<code>CustomElementRegistry</code>提供注册自定义元素和查询已注册元素的方法，使用<code>customElements</code>可以直接获取其实例。</p>
+<h3 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h3><table>
+<thead>
+<tr>
+<th>方法名</th>
+<th>作用</th>
+<th>参数</th>
+<th>返回值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>customElements.define</code></td>
+<td>定义了一个自定义元素</td>
+<td><code>name</code>: 自定义元素名; <code>constructor</code>: 自定义元素构造器; <code>options</code>: 控制元素如何定义(目前只支持extends)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><code>customElements.get</code></td>
+<td>返回以前定义自定义元素的构造函数</td>
+<td><code>name</code>: 返回引用的构造函数的自定义元素的名字</td>
+<td>指定名字的自定义元素的构造函数，如果没有使用该名称的自定义元素定义，则为undefined。</td>
+</tr>
+<tr>
+<td><code>customElements.upgrade</code></td>
+<td>将更新节点子树中所有包含阴影的自定义元素，甚至在它们连接到主文档之前也是如此</td>
+<td><code>root</code>: 待升级的包含阴影的派生元素节点</td>
+<td>-</td>
+</tr>
+<tr>
+<td><code>customElements.whenDefined</code></td>
+<td>当一个自定义节点被定义时走入then，如果这个元素名没有被定义，那么返回的是一直pending状态</td>
+<td><code>name</code>: 自定义元素名</td>
+<td>Promise</td>
+</tr>
+</tbody></table>
+<h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">customElements.<span class="title function_">define</span>(<span class="string">&quot;test-shadow-dom&quot;</span>, <span class="title class_">TestShadowCls</span>)</span><br></pre></td></tr></table></figure>
+
+<h2 id="使用-1"><a href="#使用-1" class="headerlink" title="使用"></a><h1>使用</h1></h2><h3 id="挂载-shadow-dom"><a href="#挂载-shadow-dom" class="headerlink" title="挂载 shadow dom"></a>挂载 shadow dom</h3><p>可以调用<code>Element.attachShadow</code>将 Shadow Dom 选择挂载或者卸载。此方法返回的是一个类 dom，可以像操作普通 dom 一样对其进行操作</p>
+<table>
+<thead>
+<tr>
+<th>参数名</th>
+<th>作用</th>
+<th>可选值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>mode</code></td>
+<td><code>指定 Shadow DOM 树封装模式的字符串</code></td>
+<td><code>open</code>&#x2F;<code>closed</code></td>
+</tr>
+<tr>
+<td><code>delegatesFocus </code></td>
+<td><code>焦点委托</code></td>
+<td><code>boolean</code></td>
+</tr>
+</tbody></table>
+<ul>
+<li><p>挂载</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> shadow = el.<span class="title function_">attachShadow</span>(&#123;</span><br><span class="line">  <span class="attr">mode</span>: <span class="string">&quot;open&quot;</span>,</span><br><span class="line">&#125;);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">dir</span>(shadow);</span><br></pre></td></tr></table></figure>
+
+<p><a target="_blank" rel="noopener" href="https://imgse.com/i/pCfgDbD"><img src="https://s1.ax1x.com/2023/07/12/pCfgDbD.png" alt="pCfgDbD.png"></a></p>
+</li>
+<li><p>操作 shadow dom</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> html = <span class="string">`&lt;p&gt;测试1&lt;/p&gt;`</span>;</span><br><span class="line">shadow.<span class="property">innerHTML</span> = html;</span><br></pre></td></tr></table></figure>
+
+<p><a target="_blank" rel="noopener" href="https://imgse.com/i/pCfRCm8"><img src="https://s1.ax1x.com/2023/07/12/pCfRCm8.png" alt="pCfRCm8.png"></a></p>
+</li>
+</ul>
+<h3 id="自定义元素"><a href="#自定义元素" class="headerlink" title="自定义元素"></a>自定义元素</h3><p>Shadow DOM 可以渲染自定义的元素，类似于 vue3 中的组件，但里面的样式并不互相干扰。</p>
+<ul>
+<li><p>新建类</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">TestShadowCls</span> <span class="keyword">extends</span> <span class="title class_ inherited__">HTMLElement</span> &#123;</span><br><span class="line">  <span class="title function_">constructor</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="variable language_">super</span>(); <span class="comment">//必要的，因为属于子类</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>创建一个 Shadow DOM 并为其加上需要的数据</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">addShadow</span>(<span class="params"></span>)&#123;</span><br><span class="line">  <span class="variable language_">this</span>.<span class="property">shadow</span> = <span class="variable language_">this</span>.<span class="title function_">attachShadow</span>(&#123;</span><br><span class="line">      <span class="attr">mode</span>: <span class="string">&quot;open&quot;</span></span><br><span class="line">  &#125;)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="title function_">createChild</span>(<span class="params"></span>)&#123;</span><br><span class="line">  <span class="keyword">const</span> el = <span class="variable language_">document</span>.<span class="title function_">createElement</span>(<span class="string">&quot;div&quot;</span>);</span><br><span class="line">  <span class="keyword">const</span> pel = <span class="variable language_">document</span>.<span class="title function_">createElement</span>(<span class="string">&quot;p&quot;</span>);</span><br><span class="line">  pel.<span class="property">textContent</span> = <span class="string">&quot;测试文案&quot;</span>;</span><br><span class="line">  pel.<span class="title function_">setAttribute</span>(<span class="string">&quot;class&quot;</span>, <span class="string">&quot;test&quot;</span>)</span><br><span class="line">  <span class="keyword">const</span> imgae = <span class="variable language_">document</span>.<span class="title function_">createElement</span>(<span class="string">&quot;img&quot;</span>);</span><br><span class="line">  imgae.<span class="title function_">setAttribute</span>(<span class="string">&quot;src&quot;</span>, <span class="string">&quot;https://psstatic.cdn.bcebos.com/video/wiseindex/aa6eef91f8b5b1a33b454c401_1660835115000.png&quot;</span>)</span><br><span class="line">  imgae.<span class="property">src</span>=<span class="string">&quot;https://psstatic.cdn.bcebos.com/video/wiseindex/aa6eef91f8b5b1a33b454c401_1660835115000.png&quot;</span>;</span><br><span class="line">  el.<span class="title function_">appendChild</span>(pel);</span><br><span class="line">  el.<span class="title function_">appendChild</span>(imgae)</span><br><span class="line">  <span class="variable language_">this</span>.<span class="property">shadow</span>.<span class="title function_">appendChild</span>(el)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>定义自定义的元素名</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">customElements.<span class="title function_">define</span>(<span class="string">&quot;test-shadow-dom&quot;</span>, <span class="title class_">TestShadowCls</span>)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>使用</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="language-css"></span></span><br><span class="line"><span class="language-css">  <span class="selector-tag">p</span>&#123;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">color</span>: red;</span></span><br><span class="line"><span class="language-css">  &#125;</span></span><br><span class="line"><span class="language-css"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">test-shadow-dom</span> /&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>渲染效果如下，里面的文案并没有因为<code>style</code>加上的元素样式而生效</p>
+<p><a target="_blank" rel="noopener" href="https://imgse.com/i/pCfqRu4"><img src="https://s1.ax1x.com/2023/07/12/pCfqRu4.png" alt="pCfqRu4.png"></a></p>
+</li>
+<li><p>添加样式</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">createClass</span>(<span class="params"></span>)&#123;</span><br><span class="line">  <span class="keyword">const</span> style = <span class="variable language_">document</span>.<span class="title function_">createElement</span>(<span class="string">&quot;style&quot;</span>);</span><br><span class="line">  style.<span class="property">textContent</span> = <span class="string">`</span></span><br><span class="line"><span class="string">      .test&#123;</span></span><br><span class="line"><span class="string">          color: blue;</span></span><br><span class="line"><span class="string">          font-weight: 600</span></span><br><span class="line"><span class="string">      &#125;</span></span><br><span class="line"><span class="string">  `</span></span><br><span class="line">  <span class="variable language_">this</span>.<span class="property">shadow</span>.<span class="title function_">appendChild</span>(style)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>加上了之后，样式生效</p>
+<p><a target="_blank" rel="noopener" href="https://imgse.com/i/pCfL98f"><img src="https://s1.ax1x.com/2023/07/12/pCfL98f.png" alt="pCfL98f.png"></a></p>
+</li>
+</ul>
+<h2 id="参链"><a href="#参链" class="headerlink" title="参链"></a>参链</h2><p><a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/API/Web_components/Using_shadow_DOM">使用 shadow DOM</a></p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/559759502">究竟什么是 Shadow DOM？</a></p>
+
+
+    
+    
+    
+  </section>
+</article>
+    </div>
+  
+    <div class='post-wrapper'>
+      <article class="post reveal">
+  <section class="meta">
+    
+    <h2 class="title">
+      <a href="/2024/02/06/%E3%80%90devTools%E3%80%91%E5%B8%B8%E7%94%A8%E9%9D%A2%E6%9D%BF/">
+        【devTools】常用面板
+      </a>
+    </h2>
+    
+    <time>
+      Feb 6, 2024
+    </time>
+		
+    
+    <div class='cats'>
+        <a href="/categories/%E6%B5%8F%E8%A7%88%E5%99%A8/">浏览器</a>
+    </div>
+
+  </section>
+  <section class="article typo">
+	  <h1 id="【devTools】常用面板"><a href="#【devTools】常用面板" class="headerlink" title="【devTools】常用面板"></a>【devTools】常用面板</h1><h2 id="Elements面板"><a href="#Elements面板" class="headerlink" title="Elements面板"></a>Elements面板</h2><h3 id="将元素存入变量"><a href="#将元素存入变量" class="headerlink" title="将元素存入变量"></a>将元素存入变量</h3><ul>
+<li><p>右击</p>
+</li>
+<li><p>选择store as global variable</p>
+</li>
+<li><p>通过$0、$1…获取对应的元素</p>
+</li>
+</ul>
+<p><a target="_blank" rel="noopener" href="https://imgse.com/i/pCVIrHH"><img src="https://s1.ax1x.com/2023/06/11/pCVIrHH.png" alt="pCVIrHH.png"></a></p>
+<h2 id="console面板"><a href="#console面板" class="headerlink" title="console面板"></a>console面板</h2><h3 id="自动合并相似信息"><a href="#自动合并相似信息" class="headerlink" title="自动合并相似信息"></a>自动合并相似信息</h3><p>Group similar message in console，浏览器默认开启的</p>
+<p><a target="_blank" rel="noopener" href="https://imgse.com/i/pCVoeqe"><img src="https://s1.ax1x.com/2023/06/11/pCVoeqe.png" alt="pCVoeqe.png"></a></p>
+<h3 id="Hide-network"><a href="#Hide-network" class="headerlink" title="Hide network"></a>Hide network</h3><p>隐藏网络的错误提示信息</p>
+<h3 id="preserve-log"><a href="#preserve-log" class="headerlink" title="preserve log"></a>preserve log</h3><p>页面跳转时保留console信息</p>
+<h3 id="show-timestamps"><a href="#show-timestamps" class="headerlink" title="show timestamps"></a>show timestamps</h3><p>打印时，会默认输入每一行信息的时间</p>
+<p>打开：devtools右上角设置按钮，perferces下show timestamps</p>
+<p><a target="_blank" rel="noopener" href="https://imgse.com/i/pCVoGM8"><img src="https://s1.ax1x.com/2023/06/11/pCVoGM8.png" alt="pCVoGM8.png"></a></p>
+<h3 id=""><a href="#" class="headerlink" title="$_"></a>$_</h3><p>作用：获取最近一次的执行结果</p>
+<p><a target="_blank" rel="noopener" href="https://imgse.com/i/pCVosMT"><img src="https://s1.ax1x.com/2023/06/11/pCVosMT.png" alt="pCVosMT.png"></a></p>
+<h3 id="和"><a href="#和" class="headerlink" title="$和$$"></a>$和$$</h3><p><code>$</code>：document.querySelector</p>
+<p><code>$$</code>: document.querySelectorAll</p>
+<h3 id="x"><a href="#x" class="headerlink" title="$x"></a>$x</h3><p>可以使用xpath选择元素。</p>
+<p>eg：$x(“&#x2F;html&#x2F;body&#x2F;div”)</p>
+<p><a target="_blank" rel="noopener" href="https://imgse.com/i/pCVofiR"><img src="https://s1.ax1x.com/2023/06/11/pCVofiR.png" alt="pCVofiR.png"></a></p>
+<h3 id="debug"><a href="#debug" class="headerlink" title="debug"></a>debug</h3><p>执行到该函数时就会触发断点</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">fn</span> = (<span class="params"></span>) =&gt; &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="title function_">debug</span>(fn)</span><br><span class="line"><span class="title function_">fn</span>()</span><br></pre></td></tr></table></figure>
+
+<p><a target="_blank" rel="noopener" href="https://imgse.com/i/pCVo4Rx"><img src="https://s1.ax1x.com/2023/06/11/pCVo4Rx.png" alt="pCVo4Rx.png"></a></p>
+<p><a target="_blank" rel="noopener" href="https://imgse.com/i/pCVooQK"><img src="https://s1.ax1x.com/2023/06/11/pCVooQK.png" alt="pCVooQK.png"></a></p>
+<h3 id="monitor"><a href="#monitor" class="headerlink" title="monitor"></a>monitor</h3><p>函数执行时打印参数值，但无法打印箭头函数的参数</p>
+<p>执行unmonitor删除效果</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">fn3</span>(<span class="params">a, b</span>)&#123;</span><br><span class="line">    <span class="keyword">return</span> a+b</span><br><span class="line">&#125;</span><br><span class="line"><span class="title function_">monitor</span>(fn3)</span><br><span class="line"><span class="title function_">fn3</span>(<span class="number">1</span>,<span class="number">2</span>)</span><br><span class="line"><span class="comment">//输出：VM3370:1 function fn3 called with arguments: 1, 2</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="monitroEvents"><a href="#monitroEvents" class="headerlink" title="monitroEvents"></a>monitroEvents</h3><p>监听并打印元素触发的事件，可以用数组一次性监听多个事件。</p>
+<p>执行unmonitorEvents取消监听</p>
+<h3 id="getEventListeners"><a href="#getEventListeners" class="headerlink" title="getEventListeners"></a>getEventListeners</h3><p>获取注册在元素上的所有事件监听器</p>
+<h3 id="queryObjects"><a href="#queryObjects" class="headerlink" title="queryObjects"></a>queryObjects</h3><p>获取所有原型链中包含该原型的对象</p>
+<h2 id="source面板"><a href="#source面板" class="headerlink" title="source面板"></a>source面板</h2><h3 id="FileSystem"><a href="#FileSystem" class="headerlink" title="FileSystem"></a>FileSystem</h3><p>可以直接与本地的文件连接，在devtools修改文件之后，会将本地的文件内容也进行修改</p>
+<p><a target="_blank" rel="noopener" href="https://imgse.com/i/pCVXADP"><img src="https://s1.ax1x.com/2023/06/11/pCVXADP.png" alt="pCVXADP.png"></a></p>
+<h3 id="overrides"><a href="#overrides" class="headerlink" title="overrides"></a>overrides</h3><p>可以以本地的文件取代页面中载入的资源</p>
+<h3 id="断点"><a href="#断点" class="headerlink" title="断点"></a>断点</h3><h4 id="条件断点"><a href="#条件断点" class="headerlink" title="条件断点"></a>条件断点</h4><p>在source代码块需要设置时，在对应的行号右键，选择Add Condition Break Point，写上具体的条件</p>
+<p><a target="_blank" rel="noopener" href="https://imgse.com/i/pCVXrb6"><img src="https://s1.ax1x.com/2023/06/11/pCVXrb6.png" alt="pCVXrb6.png"></a></p>
+<h4 id="断点打印信息，Logpoint"><a href="#断点打印信息，Logpoint" class="headerlink" title="断点打印信息，Logpoint"></a>断点打印信息，Logpoint</h4><p>在执行时经过该程序代码时打印信息</p>
+<p><a target="_blank" rel="noopener" href="https://imgse.com/i/pCVXR8H"><img src="https://s1.ax1x.com/2023/06/11/pCVXR8H.png" alt="pCVXR8H.png"></a></p>
+<h4 id="dom断点"><a href="#dom断点" class="headerlink" title="dom断点"></a>dom断点</h4><p>在element tab，右键元素，展开break on，有三种断点形式：</p>
+<ul>
+<li><p>subtree modifications ：元素内发生变化时暂停，如添加、删除、修改子节点</p>
+</li>
+<li><p>attribute modifications ：添加、删除、修改元素本身的属性时暂停</p>
+</li>
+<li><p>node removal：元素被删除时暂停，同时删除dom断点</p>
+</li>
+</ul>
+<h4 id="请求断点"><a href="#请求断点" class="headerlink" title="请求断点"></a>请求断点</h4><p>在debugger时，点击在XHR&#x2F;fetch Breapoints列表右上角的+按钮，输入data，回车保存。</p>
+<h4 id="事件监听器断点"><a href="#事件监听器断点" class="headerlink" title="事件监听器断点"></a>事件监听器断点</h4><p>在debugger时，在Event Listener BreakPoint列表的Control下勾选对应的事件，然后手动触发对应的事件</p>
+<h4 id="忽略进入文件"><a href="#忽略进入文件" class="headerlink" title="忽略进入文件"></a>忽略进入文件</h4><p>在对应的文件代码内容区域，右键选择Add script to ignore list，添加之后，这个文件就不会在调试时进入了</p>
+<h2 id="NetWork"><a href="#NetWork" class="headerlink" title="NetWork"></a>NetWork</h2><h3 id="设置区域"><a href="#设置区域" class="headerlink" title="设置区域"></a>设置区域</h3><p><a target="_blank" rel="noopener" href="https://imgse.com/i/pCVjISJ"><img src="https://s1.ax1x.com/2023/06/11/pCVjISJ.png" alt="pCVjISJ.png"></a></p>
+<ul>
+<li><p>Use large request rows</p>
+<p>使用宽版的流量记录列表来显示</p>
+</li>
+<li><p>Group by frame</p>
+<p>将来自相同iframe的请求聚焦在一起</p>
+</li>
+<li><p>show overview</p>
+<p>是否显示时间轴</p>
+</li>
+</ul>
+<p><a target="_blank" rel="noopener" href="https://imgse.com/i/pCVj7O1"><img src="https://s1.ax1x.com/2023/06/11/pCVj7O1.png" alt="pCVj7O1.png"></a></p>
+<ul>
+<li><p>Capture screenslots</p>
+<p>是否截图</p>
+</li>
+</ul>
+
+
+    
+    
+    
+  </section>
+</article>
+    </div>
+  
+    <div class='post-wrapper'>
+      <article class="post reveal">
+  <section class="meta">
+    
+    <h2 class="title">
+      <a href="/2024/02/06/%E3%80%90devTools%E3%80%91performance/">
+        【devTools】performance
+      </a>
+    </h2>
+    
+    <time>
+      Feb 6, 2024
+    </time>
+		
+    
+    <div class='cats'>
+        <a href="/categories/%E6%B5%8F%E8%A7%88%E5%99%A8/">浏览器</a>
+    </div>
+
+  </section>
+  <section class="article typo">
+	  <h1 id="Performance面板"><a href="#Performance面板" class="headerlink" title="Performance面板"></a>Performance面板</h1><h2 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h2><h3 id="前提"><a href="#前提" class="headerlink" title="前提"></a>前提</h3><ul>
+<li><p>保持环境整洁，例如使用隐私模式、清除缓存等</p>
+</li>
+<li><p>确定目标，在执行过程中，尽可能缩短持续时间，避免额外的操作等</p>
+</li>
+</ul>
+<h3 id="开始记录"><a href="#开始记录" class="headerlink" title="开始记录"></a>开始记录</h3><ul>
+<li><p>打开devTools，切换到Performance面板</p>
+</li>
+<li><p>点击左上角的圆形按钮开始记录</p>
+</li>
+</ul>
+<p><a target="_blank" rel="noopener" href="https://imgse.com/i/pCVcIH0"><img src="https://s1.ax1x.com/2023/06/11/pCVcIH0.png" alt="pCVcIH0.png"></a></p>
+<ul>
+<li><p>记录过程种可以做一些交互</p>
+</li>
+<li><p>点击stop停止监测</p>
+</li>
+</ul>
+<h3 id="生成内容"><a href="#生成内容" class="headerlink" title="生成内容"></a>生成内容</h3><p><a target="_blank" rel="noopener" href="https://imgse.com/i/pCVvNc9"><img src="https://s1.ax1x.com/2023/06/11/pCVvNc9.png" alt="pCVvNc9.png"></a></p>
+<ul>
+<li><p>工具栏：与整体面板有关的操作选项和设置</p>
+</li>
+<li><p>overview图表：可视化呈现完整时间轴的基本信息</p>
+</li>
+<li><p>Activities：将性能信息以方块式的Activity为单位显示在不同种类的列表中</p>
+</li>
+</ul>
+<h2 id="工具栏"><a href="#工具栏" class="headerlink" title="工具栏"></a>工具栏</h2><p><a target="_blank" rel="noopener" href="https://imgse.com/i/pCVvshD"><img src="https://s1.ax1x.com/2023/06/11/pCVvshD.png" alt="pCVvshD.png"></a></p>
+<h3 id="Disabled-Javascript-Call-Stack"><a href="#Disabled-Javascript-Call-Stack" class="headerlink" title="Disabled Javascript Call Stack"></a>Disabled Javascript Call Stack</h3><p>Main列表不会显示js的Call stack信息</p>
+<h3 id="Enable-advanced-paint-instrumentation"><a href="#Enable-advanced-paint-instrumentation" class="headerlink" title="Enable advanced paint instrumentation"></a>Enable advanced paint instrumentation</h3><p>记录绘制性能的详细信息，并显示在</p>
+<ul>
+<li><p>Frames：Frame activity的Layers分页</p>
+</li>
+<li><p>Main：Paint activity的Paint Profiler分页</p>
+</li>
+</ul>
+<h2 id="Overview图表"><a href="#Overview图表" class="headerlink" title="Overview图表"></a>Overview图表</h2><p><a target="_blank" rel="noopener" href="https://imgse.com/i/pCVv79g"><img src="https://s1.ax1x.com/2023/06/11/pCVv79g.png" alt="pCVv79g.png"></a></p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>FPS，帧数</td>
+<td><font color=green>绿色</font>竖线越高，FPS 越高。 FPS 图表上的<font color=red>红色</font>块表示长时间帧，很可能会出现卡顿</td>
+</tr>
+<tr>
+<td>CPU，CPU 资源</td>
+<td>指示消耗 CPU 资源的事件类型</td>
+</tr>
+<tr>
+<td>NET，网络请求</td>
+<td>每条彩色横杠表示一种资源。横杠越长，检索资源所需的时间越长。 每个横杠的浅色部分表示等待时间（从请求资源到第一个字节下载完成的时间），可以在屏幕快照下面查看具体的网络请求数据</td>
+</tr>
+</tbody></table>
+<h3 id="FPS"><a href="#FPS" class="headerlink" title="FPS"></a>FPS</h3><p>绿色方块：每秒帧数的变化，红色、粉色横条为低帧数警告，即可能会让用户感受到卡顿的部分</p>
+<h3 id="CPU"><a href="#CPU" class="headerlink" title="CPU"></a>CPU</h3><ul>
+<li><p>灰色：浏览器内部的工作</p>
+</li>
+<li><p>蓝色：HTML请求、文件解析</p>
+</li>
+<li><p>黄色：事件、js</p>
+</li>
+<li><p>绿色：图像处理、画面绘制</p>
+</li>
+<li><p>紫色：样式计算</p>
+</li>
+</ul>
+<h3 id="NET"><a href="#NET" class="headerlink" title="NET"></a>NET</h3><ul>
+<li><p>蓝色：有请求正在执行</p>
+</li>
+<li><p>深色：优先权较高的请求</p>
+</li>
+</ul>
+<h2 id="Activities"><a href="#Activities" class="headerlink" title="Activities"></a>Activities</h2><h3 id="Main"><a href="#Main" class="headerlink" title="Main"></a>Main</h3><p><a target="_blank" rel="noopener" href="https://imgse.com/i/pCVxZE6"><img src="https://s1.ax1x.com/2023/06/11/pCVxZE6.png" alt="pCVxZE6.png"></a></p>
+<ul>
+<li><p>作用</p>
+<p>显示主线程所有的任务，持续事件超过50ms（长任务）的任务会以红色虚线和右上角的三角形标识</p>
+</li>
+</ul>
+<p>任务底下的Activities依据类型有不同颜色，黄色的js Activity底下以随机颜色显示Call Stack Activities</p>
+<h3 id="Network"><a href="#Network" class="headerlink" title="Network"></a>Network</h3><p><a target="_blank" rel="noopener" href="https://imgse.com/i/pCVx5rR"><img src="https://s1.ax1x.com/2023/06/11/pCVx5rR.png" alt="pCVx5rR.png"></a></p>
+<ul>
+<li><p>左侧的细线：连接至发送请求前</p>
+</li>
+<li><p>浅色区域：等待服务器响应</p>
+</li>
+<li><p>深色区域：下载资源</p>
+</li>
+<li><p>右侧的细线：解析资源</p>
+</li>
+<li><p>左上角的小方块：请求优先级，深色表示高，浅色表示浅</p>
+</li>
+</ul>
+<h3 id="Frames"><a href="#Frames" class="headerlink" title="Frames"></a>Frames</h3><p>显示每一帧画面的详细信息</p>
+<h3 id="Timeings"><a href="#Timeings" class="headerlink" title="Timeings"></a>Timeings</h3><p>显示网页使用的重要时间点</p>
+<ul>
+<li><p>DCL：HTML已经加载且解析完毕</p>
+</li>
+<li><p>FP：绘制出默认背景颜色之外的任何内容</p>
+</li>
+<li><p>FCP：绘制出任何文字、图片、有颜色的canvas时</p>
+</li>
+<li><p>LCP：绘制出页面最大的内容时</p>
+</li>
+<li><p>L：解析HTML期间请求的资源都载入完成时</p>
+</li>
+</ul>
+<h3 id="Experience"><a href="#Experience" class="headerlink" title="Experience"></a>Experience</h3><p>显示所有元素位移并计算分数，越低表示页面稳定性越高</p>
+<h3 id="GPU"><a href="#GPU" class="headerlink" title="GPU"></a>GPU</h3><p>显示GPU的使用事件</p>
+<h3 id="Raster"><a href="#Raster" class="headerlink" title="Raster"></a>Raster</h3><p>定义：浏览器渲染流程中Paint阶段的一环</p>
+<p>作用：显示产生Raster时各个线程的信息</p>
+<h2 id="信息面板："><a href="#信息面板：" class="headerlink" title="信息面板："></a>信息面板：</h2><ul>
+<li><p>summary：显示activity的持续时间，并将期间发生的其他activities分类显示</p>
+</li>
+<li><p>botton-up：将同一种activity的运行时间加总</p>
+</li>
+<li><p>call tree：以触发关系自上而下显示activities，最上方的称为root activity，是下面各个activities的起点</p>
+</li>
+<li><p>event log：以时间顺序显示activities</p>
+</li>
+</ul>
+<blockquote>
+<p>注：activity占用主线程超过50ms会被加上红色三角形，成为long task</p>
+</blockquote>
+<h3 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h3><p>显示该Activity的持续事件，并将期间发生的其他Activists分类显示</p>
+<h3 id="call-tree"><a href="#call-tree" class="headerlink" title="call tree"></a>call tree</h3><p><a target="_blank" rel="noopener" href="https://imgse.com/i/pCV2ztK"><img src="https://s1.ax1x.com/2023/06/11/pCV2ztK.png" alt="pCV2ztK.png"></a></p>
+<p>call tree会显示任务由哪些activities组成，若activity的类型为程序代码，则层层展开可以看到函数的call stack</p>
+<ul>
+<li><p>self time</p>
+<p>函数本身的运行时间，并不包含函数执行其他函数的时间</p>
+</li>
+<li><p>total time</p>
+<p>函数本身和其下所有函数的运行时间的总和</p>
+</li>
+</ul>
+<h3 id="bottom-up"><a href="#bottom-up" class="headerlink" title="bottom-up"></a>bottom-up</h3><p>会将同一种activity的运行时间加总，因此分页中self time较长的函数通常是性能瓶颈的来源</p>
+<p>注：总运行时间长也可能是因为执行次数多</p>
+<h3 id="Event-Log"><a href="#Event-Log" class="headerlink" title="Event Log"></a>Event Log</h3><p>以触发事件顺序显示Activities</p>
+<h2 id="performance-monitor"><a href="#performance-monitor" class="headerlink" title="performance monitor"></a>performance monitor</h2><h3 id="打开"><a href="#打开" class="headerlink" title="打开"></a>打开</h3><p>1、在devtool按esc打开drawer，在左上角三个点打开</p>
+<p>2、在devtools右上角的三个点，打开more tools打开</p>
+<h3 id="作用"><a href="#作用" class="headerlink" title="作用"></a>作用</h3><p>实时监测性能信息，用于检查特定功能是否存在内存泄漏的问题，实时反应内存用量的趋势。一般会把重点放在js heap size（js内存使用占有量）和dom tools</p>
+<p><a target="_blank" rel="noopener" href="https://imgse.com/i/pCVf0T1"><img src="https://s1.ax1x.com/2023/06/11/pCVf0T1.png" alt="pCVf0T1.png"></a></p>
+<h2 id="Web-Vitals"><a href="#Web-Vitals" class="headerlink" title="Web Vitals"></a>Web Vitals</h2><h3 id="LCP：前端性能指标，用于表示加载速度"><a href="#LCP：前端性能指标，用于表示加载速度" class="headerlink" title="LCP：前端性能指标，用于表示加载速度"></a>LCP：前端性能指标，用于表示加载速度</h3><p>可以在performance的timeing中可以看到</p>
+<p><a target="_blank" rel="noopener" href="https://imgse.com/i/pCV4QP0"><img src="https://s1.ax1x.com/2023/06/11/pCV4QP0.png" alt="pCV4QP0.png"></a></p>
+<h3 id="FID：表示首次输入延迟"><a href="#FID：表示首次输入延迟" class="headerlink" title="FID：表示首次输入延迟"></a>FID：表示首次输入延迟</h3><p>通过rendering分页的Core Web Vitals来判断</p>
+<p><a target="_blank" rel="noopener" href="https://imgse.com/i/pCV45z8"><img src="https://s1.ax1x.com/2023/06/11/pCV45z8.png" alt="pCV45z8.png"></a></p>
+<h3 id="CLS：表示累计布局偏移"><a href="#CLS：表示累计布局偏移" class="headerlink" title="CLS：表示累计布局偏移"></a>CLS：表示累计布局偏移</h3><p>通过performance的Experience的layout shift标签</p>
+
+
+    
+    
+    
+  </section>
+</article>
+    </div>
+  
+    <div class='post-wrapper'>
+      <article class="post reveal">
+  <section class="meta">
+    
+    <h2 class="title">
+      <a href="/2024/02/06/%E3%80%90devTools%E3%80%91layers/">
+        【devTools】layers
+      </a>
+    </h2>
+    
+    <time>
+      Feb 6, 2024
+    </time>
+		
+    
+    <div class='cats'>
+        <a href="/categories/%E6%B5%8F%E8%A7%88%E5%99%A8/">浏览器</a>
+    </div>
+
+  </section>
+  <section class="article typo">
+	  <h1 id="【devTools】layers"><a href="#【devTools】layers" class="headerlink" title="【devTools】layers"></a>【devTools】layers</h1><h2 id="元素绘制"><a href="#元素绘制" class="headerlink" title="元素绘制"></a>元素绘制</h2><p>可以查看哪些元素正在绘制</p>
+<h3 id="打开"><a href="#打开" class="headerlink" title="打开"></a>打开</h3><ul>
+<li><p>在devtools页面按esc，点击左上角的三个点，打开rendering分页</p>
+</li>
+<li><p>勾选对应的选项</p>
+</li>
+</ul>
+<h3 id="页面表现"><a href="#页面表现" class="headerlink" title="页面表现"></a>页面表现</h3><ul>
+<li>勾选了paint flashing</li>
+</ul>
+<p>元素正在绘制时，会由绿色小框表示</p>
+<p><a target="_blank" rel="noopener" href="https://imgse.com/i/pCVha38"><img src="https://s1.ax1x.com/2023/06/11/pCVha38.png" alt="pCVha38.png"></a></p>
+<ul>
+<li>勾选layer borders</li>
+</ul>
+<p>可以显示每个图层的区域范围</p>
+<p><a target="_blank" rel="noopener" href="https://imgse.com/i/pCVh4u4"><img src="https://s1.ax1x.com/2023/06/11/pCVh4u4.png" alt="pCVh4u4.png"></a></p>
+<h2 id="layers"><a href="#layers" class="headerlink" title="layers"></a>layers</h2><h3 id="打开-1"><a href="#打开-1" class="headerlink" title="打开"></a>打开</h3><p>在devtools右上角三个点，点击more tools，点击layers打开layers标签</p>
+<h3 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h3><p><a target="_blank" rel="noopener" href="https://imgse.com/i/pCV4AxS"><img src="https://s1.ax1x.com/2023/06/11/pCV4AxS.png" alt="pCV4AxS.png"></a></p>
+<p>可以显示当前页面存在哪些图层，对于具体的图层，可以看到其对应的大小、产生原因及内存占有量</p>
+
+
+    
+    
+    
+  </section>
+</article>
+    </div>
+  
+    <div class='post-wrapper'>
+      <article class="post reveal">
+  <section class="meta">
+    
+    <h2 class="title">
+      <a href="/2024/02/06/%E3%80%90css%E3%80%91%E5%B1%9E%E6%80%A7%E5%80%BC%E5%AE%9A%E4%B9%89%E8%AF%AD%E6%B3%95/">
+        【css】属性值定义语法
+      </a>
+    </h2>
+    
+    <time>
+      Feb 6, 2024
+    </time>
+		
+    
+    <div class='cats'>
+        <a href="/categories/css/">css</a>
+    </div>
+
+  </section>
+  <section class="article typo">
+	  <h1 id="【css】属性值定义语法"><a href="#【css】属性值定义语法" class="headerlink" title="【css】属性值定义语法"></a>【css】属性值定义语法</h1><p>css属性定义语法是专门用于限定css属性合法取值的语法，其包含3种基本组成元素：</p>
+<ul>
+<li><p>关键字</p>
+</li>
+<li><p>数据类型</p>
+</li>
+<li><p>符号</p>
+</li>
+</ul>
+<h2 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h2><h3 id="关键字"><a href="#关键字" class="headerlink" title="关键字"></a>关键字</h3><p>其分为通用关键字和全局关键字</p>
+<ul>
+<li><p>通用关键字：</p>
+<p><code>auto</code>, <code>none</code>, <code>ease</code>等是通用关键字，或者称为普通关键字，这些只能被一部分的css属性支持</p>
+</li>
+<li><p>全局关键字</p>
+<p><code>inherit</code>, <code>initial</code>, <code>unset</code>和<code>revert</code>是全局关键字，被所有css属性支持的特殊关键字</p>
+</li>
+</ul>
+<h3 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h3><p>css的数据类型有很多，至少有50个，例如number、percent、rgb等，这些都是。以及还有<code>shape-box</code>，<code>basic-shape</code>，<code>image</code>也属于数据类型</p>
+<ul>
+<li><p>shape-box</p>
+<p>box、margin-box、content-box、padding-box、border-box都是属于其支持的属性值</p>
+</li>
+<li><p>basic-shape</p>
+<p>inset()、circle()、ellipse()、polygon()、path()、clip-path和offset-path都属于</p>
+</li>
+<li><p>image</p>
+<p><url>，<gradient>，element()，image()，image-set()，cross-fade()，paint()</p>
+</li>
+</ul>
+<h3 id="符号"><a href="#符号" class="headerlink" title="符号"></a>符号</h3><p>css的符号分为字面符号、组合符号以及数量符号</p>
+<h4 id="字面符号"><a href="#字面符号" class="headerlink" title="字面符号"></a>字面符号</h4><p>指css属性种原本就支持的合法符号，这些符号会在css语法中按照其原本的字面意思呈现</p>
+<table>
+<thead>
+<tr>
+<th>符号</th>
+<th>名称</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>,</td>
+<td>并列分隔符</td>
+<td>用于分隔数个并列值，或者分隔函数的参数值</td>
+</tr>
+<tr>
+<td>&#x2F;</td>
+<td>缩写分隔符</td>
+<td>用于分隔一个值的多个部分，在css缩写中用于分离类型相同但属于不同css属性的值，以及用在部分css函数中</td>
+</tr>
+</tbody></table>
+<h4 id="组合符号"><a href="#组合符号" class="headerlink" title="组合符号"></a>组合符号</h4><p>用于表示数个基本元素之间的组合关系</p>
+<table>
+<thead>
+<tr>
+<th>符号</th>
+<th>名称</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td>并列</td>
+<td>符号为空格字符，表示各部分必须出现，同时需要按照顺序出现</td>
+</tr>
+<tr>
+<td>&amp;&amp;</td>
+<td>与</td>
+<td>各部分必须出现，但可以不按顺序出现</td>
+</tr>
+<tr>
+<td>||</td>
+<td>或</td>
+<td>各部分至少出现一个，可以不按顺序出现</td>
+</tr>
+<tr>
+<td>|</td>
+<td>互斥</td>
+<td>各部分恰好出现其中一个</td>
+</tr>
+<tr>
+<td>[]</td>
+<td>方括号</td>
+<td>将各部分进行分组以绕过上面几个符号的优先规则，其优先级最高</td>
+</tr>
+</tbody></table>
+<h4 id="数量符号"><a href="#数量符号" class="headerlink" title="数量符号"></a>数量符号</h4><p>用于描述一个元素可以出现次数，数量符号不能叠加，且优先级高于组合符号</p>
+<table>
+<thead>
+<tr>
+<th>符号</th>
+<th>名称</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td>无数量符号</td>
+<td>恰好出现一次</td>
+</tr>
+<tr>
+<td>*</td>
+<td>星号</td>
+<td>可以出现任意次数</td>
+</tr>
+<tr>
+<td>+</td>
+<td>加号</td>
+<td>可以出现一次或者多次</td>
+</tr>
+<tr>
+<td>？</td>
+<td>问号</td>
+<td>可以出现零次或者一次</td>
+</tr>
+<tr>
+<td>{A, B}</td>
+<td>花括号</td>
+<td>出现最少A次，最多B次</td>
+</tr>
+<tr>
+<td>#</td>
+<td>井号</td>
+<td>可以出现一次或者多次，但多次出现时必须以逗号分隔</td>
+</tr>
+<tr>
+<td>！</td>
+<td>叹号</td>
+<td>表示当前分组必须产生一个值，该符号多出现在组合符号方括号的后面</td>
+</tr>
+</tbody></table>
+
+
+    
+    
+    
+  </section>
+</article>
+    </div>
+  
+</section>
+
+
+  <nav id="page-nav">
+    
+    <a class="prev" rel="prev" href="/archives/2024/">
+      <span class="icon icon-chevron-left"></span>
+      <span class="text">Previous</span>
+    </a>
+    
+    
+    <a class="next" rel="next" href="/archives/2024/page/3/">
+      <span class="text">Next</span>
+      <span class="icon icon-chevron-right"></span>
+    </a>
+    
+  </nav>
+  
+
+
+      </div>
+      <aside class='l_side'>
+        
+  <section class='m_widget about'>
+
+<img class='avatar waves-image' src='/images/avatar.jpg' />
+
+<div class='header'>John Doe</div>
+<div class='content'>
+<div class='desc'>Tempora mutantur, nos et mutamur in illis ...</div>
+</div>
+</section>
+
+  <section class='m_widget links'>
+<div class='header'>Links</div>
+<div class='content'>
+    <ul class="entry">
+    
+        <li><a class="flat-box" target="_blank" href="https://ccoooss.com">
+            <div class='name'>ClassicOldSong</div>
+        </a></li>
+    
+        <li><a class="flat-box" target="_blank" href="https://frantic1048.logdown.com/">
+            <div class='name'>Frantic1048</div>
+        </a></li>
+    
+        <li><a class="flat-box" target="_blank" href="https://hclmaster.github.io/">
+            <div class='name'>Hclmaster</div>
+        </a></li>
+    
+        <li><a class="flat-box" target="_blank" href="https://whst.github.io/">
+            <div class='name'>WANG Hsü-Tung</div>
+        </a></li>
+    
+    </ul>
+</div>
+</section>
+
+  <section class='m_widget categories'>
+<div class='header'>Categories</div>
+<div class='content'>
+    
+    <ul class="entry">
+    
+        <li><a class="flat-box" href="/categories/Defi/"><div class='name'>Defi</div><div class='badget'>8</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/HTML/"><div class='name'>HTML</div><div class='badget'>2</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/PWA/"><div class='name'>PWA</div><div class='badget'>1</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/css/"><div class='name'>css</div><div class='badget'>11</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/http/"><div class='name'>http</div><div class='badget'>1</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/js/"><div class='name'>js</div><div class='badget'>5</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/vue/"><div class='name'>vue</div><div class='badget'>4</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/web3/"><div class='name'>web3</div><div class='badget'>1</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/webAssembly/"><div class='name'>webAssembly</div><div class='badget'>2</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/webpack/"><div class='name'>webpack</div><div class='badget'>2</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/webwork/"><div class='name'>webwork</div><div class='badget'>1</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/%E4%B8%9A%E5%8A%A1%E5%9C%BA%E6%99%AF/"><div class='name'>业务场景</div><div class='badget'>1</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"><div class='name'>小程序</div><div class='badget'>2</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/%E6%B5%8F%E8%A7%88%E5%99%A8/"><div class='name'>浏览器</div><div class='badget'>7</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/%E9%A2%9D%E5%A4%96%E5%86%85%E5%AE%B9/"><div class='name'>额外内容</div><div class='badget'>5</div></a></li>
+    
+    </ul>
+    
+</div>
+</section>
+
+  
+<div class="m_widget tagcloud">
+    <div class="header">Tags</div>
+    <div class='content'>
+        <a href="/tags/chrome/" style="font-size: 14px; color: #808080">chrome</a> <a href="/tags/console/" style="font-size: 14px; color: #808080">console</a> <a href="/tags/js/" style="font-size: 14px; color: #808080">js</a>
+    </div>
+</div>
+
+
+
+      </aside>
+      <script>setLoadingBarProgress(60);</script>
+    </div>
+  </div>
+  <footer id="footer" class="clearfix">
+
+	<div class="social-wrapper">
+  	
+      
+        <a href="https://github.com/stkevintan" class="social github"
+          target="_blank" rel="external">
+          <span class="icon icon-github"></span>
+        </a>
+      
+        <a href="https://twitter.com/kevinsfork" class="social twitter"
+          target="_blank" rel="external">
+          <span class="icon icon-twitter"></span>
+        </a>
+      
+        <a href="/atom.xml" class="social rss"
+          target="_blank" rel="external">
+          <span class="icon icon-rss"></span>
+        </a>
+      
+    
+  </div>
+  
+  <div>Theme <a target="_blank" rel="noopener" href='https://github.com/stkevintan/hexo-theme-material-flow' class="codename">MaterialFlow</a> designed by <a href="http://keyin.me/" target="_blank">Kevin Tan</a>.</div>
+  
+</footer>
+
+
+  <script>setLoadingBarProgress(80);</script>
+  
+
+<script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src='//cdn.bootcss.com/node-waves/0.7.5/waves.min.js'></script>
+<script src="//cdn.bootcss.com/scrollReveal.js/3.3.2/scrollreveal.min.js"></script>
+
+<script src="/js/jquery.fitvids.js"></script>
+
+<script>
+	var GOOGLE_CUSTOM_SEARCH_API_KEY = "";
+	var GOOGLE_CUSTOM_SEARCH_ENGINE_ID = "";
+	var ALGOLIA_API_KEY = "";
+	var ALGOLIA_APP_ID = "";
+	var ALGOLIA_INDEX_NAME = "";
+  var AZURE_SERVICE_NAME = "";
+  var AZURE_INDEX_NAME = "";
+  var AZURE_QUERY_KEY = "";
+  var BAIDU_API_ID = "";
+  var SEARCH_SERVICE = "hexo";
+  var ROOT = "/"||"/";
+  if(!ROOT.endsWith('/'))ROOT += '/';
+</script>
+
+<script src="/js/search.js"></script>
+
+
+<script src="/js/app.js"></script>
+
+
+
+  <script>setLoadingBarProgress(100);</script>
+</body>
+</html>
